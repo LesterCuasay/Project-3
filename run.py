@@ -54,7 +54,7 @@ def run_game(word):
     if guessed:
         print("Congrats, You guessed the word! You win")
     else:
-        print("Sorry, no more tries. The correct word was " + word + "Better luck next time!")
+        print("No more tries! The answer is " + word)
 
 
 def display_hangman(tries):
@@ -115,3 +115,15 @@ def display_hangman(tries):
         """
     ]
     return stages[tries]
+
+
+def main():
+    word = get_word()
+    run_game(word)
+    while input("Play Again? (Y/N) ").upper() == "Y":
+        word = get_word()
+        run_game(word)
+
+
+if __name__ == "__main__":
+    main()
