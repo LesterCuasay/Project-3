@@ -1,5 +1,9 @@
+"""
+Imports
+"""
 import random
 from words import word_list
+from graphics import display_hangman
 
 
 def get_word():
@@ -37,7 +41,8 @@ def run_game(word):
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [i for i, letter in enumerate(word)
+                           if letter == guess]
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
@@ -61,88 +66,13 @@ def run_game(word):
     if guessed:
         print("Congrats, You guessed the word! You win")
     else:
-        print("No more tries! The word is " + word)
-
-
-def display_hangman(tries):
-    """
-    Displays the lives remaining depending on incorrect guesses.
-    """
-    stages = [
-                """
-                   You're Dead !
-                   --------
-                   |      |
-                   |      O
-                   |     \\|/
-                   |      |
-                   |     / \\
-                   -
-                """,
-                """
-                   1 more guess left !
-                   --------
-                   |      |
-                   |      O
-                   |     \\|/
-                   |      |
-                   |     /
-                   -
-                """,
-                """
-                   2 more guesses left !
-                   --------
-                   |      |
-                   |      O
-                   |     \\|/
-                   |      |
-                   |
-                   -
-                """,
-                """
-                   3 more guesses left !
-                   --------
-                   |      |
-                   |      O
-                   |     \\|
-                   |      |
-                   |
-                   -
-                """,
-                """
-                   4 more guesses left !
-                   --------
-                   |      |
-                   |      O
-                   |      |
-                   |      |
-                   |
-                   -
-                """,
-                """
-                   5 more guesses left !
-                   --------
-                   |      |
-                   |      O
-                   |
-                   |
-                   |
-                   -
-                """,
-                """
-                   --------
-                   |      |
-                   |
-                   |
-                   |
-                   |
-                   -
-                """     
-    ]
-    return stages[tries]
+        print("No more tries! The  is " + word)
 
 
 def main():
+    """
+    Calls to run the game.
+    """
     word = get_word()
     run_game(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
