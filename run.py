@@ -2,8 +2,16 @@
 Imports
 """
 import random
+import os
 from words import word_list
 from graphics import display_hangman
+
+
+def clear_screen():
+    """
+    Clear function to clean-up the terminal to reduce clutter.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def get_word():
@@ -29,6 +37,8 @@ def run_game(word):
     print(word_completion)
     print("\n")
     while not guessed and tries > 0:
+        print(f"The word has {len(word)} letters.")
+        print("Letters guessed: " + ', ' .join(guessed_letters))
         guess = input("Please guess a letter or a word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
