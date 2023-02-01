@@ -7,6 +7,17 @@ from words import word_list
 from graphics import display_hangman
 
 
+def player():
+    """
+    Prompts the user to input a player name
+    """
+    while True:
+        player_name = input("What's your name?  \n").upper()
+        if player_name.isalpha():
+            player_name = player
+            return player
+
+
 def clear_screen():
     """
     Clear function to clean-up the terminal to reduce clutter.
@@ -84,7 +95,8 @@ def run_game(word):
         print("Congrats, You guessed the word! You win")
     else:
         clear_screen()
-        print("No more tries! The  is " + word)
+        # print("No more tries! The word is " + word)
+        print(f"No more tries! {player_name} the word is {word}")
 
 
 def main():
@@ -94,6 +106,7 @@ def main():
     If not, then they can terminate the game.
     """
     word = get_word()
+    player()
     run_game(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
         word = get_word()
