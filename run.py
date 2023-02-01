@@ -42,12 +42,15 @@ def run_game(word):
         guess = input("Please guess a letter or a word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
+                clear_screen()
                 print("You already guessed the letter", guess)
             elif guess not in word:
+                clear_screen()
                 print(guess, "is not in the word.")
                 tries -= 1
                 guessed_letters.append(guess)
             else:
+                clear_screen()
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
@@ -60,8 +63,10 @@ def run_game(word):
                     guessed = True
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
+                clear_screen()
                 print("You already guessed the word", guess)
             elif guess != word:
+                clear_screen()
                 print(guess, "is not the word.")
                 tries -= 1
                 guessed_words.append(guess)
@@ -69,13 +74,16 @@ def run_game(word):
                 guessed = True
                 word_completion = word
         else:
+            clear_screen()
             print("Not a valid guess")
         print(display_hangman(tries))
         print(word_completion)
         print("\n")
     if guessed:
+        clear_screen()
         print("Congrats, You guessed the word! You win")
     else:
+        clear_screen()
         print("No more tries! The  is " + word)
 
 
