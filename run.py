@@ -3,11 +3,18 @@ from words import word_list
 
 
 def get_word():
+    """
+    Gets a word from the words.py file and randomises it for the game.
+    """
     word = random.choice(word_list)
     return word.upper()
 
 
 def run_game(word):
+    """
+    The player will get 6 tries, and will be able to
+    know which letters OR words they have already guessed
+    """
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
@@ -54,12 +61,16 @@ def run_game(word):
     if guessed:
         print("Congrats, You guessed the word! You win")
     else:
-        print("No more tries! The answer is " + word)
+        print("No more tries! The word is " + word)
 
 
 def display_hangman(tries):
+    """
+    Displays the lives remaining depending on incorrect guesses.
+    """
     stages = [
                 """
+                   You're Dead !
                    --------
                    |      |
                    |      O
@@ -69,6 +80,7 @@ def display_hangman(tries):
                    -
                 """,
                 """
+                   1 more guess left !
                    --------
                    |      |
                    |      O
@@ -78,6 +90,7 @@ def display_hangman(tries):
                    -
                 """,
                 """
+                   2 more guesses left !
                    --------
                    |      |
                    |      O
@@ -87,6 +100,7 @@ def display_hangman(tries):
                    -
                 """,
                 """
+                   3 more guesses left !
                    --------
                    |      |
                    |      O
@@ -96,6 +110,7 @@ def display_hangman(tries):
                    -
                 """,
                 """
+                   4 more guesses left !
                    --------
                    |      |
                    |      O
@@ -105,6 +120,7 @@ def display_hangman(tries):
                    -
                 """,
                 """
+                   5 more guesses left !
                    --------
                    |      |
                    |      O
