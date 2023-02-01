@@ -72,6 +72,8 @@ def run_game(word):
 def main():
     """
     Calls to run the game.
+    Gives user the option to restart the game once game completion.
+    If not, then they can terminate the game.
     """
     word = get_word()
     run_game(word)
