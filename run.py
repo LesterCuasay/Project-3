@@ -12,12 +12,14 @@ def player_id():
     Prompts the user to input a player name
     """
     while True:
-        player_name = input("What's your name?  \n").upper()
         if player_name.isalpha():
             print(f"{player_name} Let's play Hangman!")
             return
         else:
             print(f"{player_name} is not valid")
+
+
+player_name = input("What's your name?  \n").upper()
 
 
 def clear_screen():
@@ -96,9 +98,7 @@ def run_game(word):
         print("Congrats, You guessed the word! You win")
     else:
         clear_screen()
-        # # print("No more tries! The word is " + word)
-        # print(f"No more tries!" + player_name + "the word is" {word})
-        print("No more tries! The word is", word)
+        print("No more tries! " + player_name + ", the word is " + word)
 
 
 def main():
