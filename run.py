@@ -117,6 +117,7 @@ def main():
             restart = input("Play Again? (Y/N) ")
             if restart.upper() == "Y":
                 clear_screen()
+                print("Let's go again!")
                 restart_game = True
             elif restart.upper() == "N":
                 print("Thanks for playing! " + PLAYER_NAME)
