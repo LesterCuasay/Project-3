@@ -111,8 +111,20 @@ def main():
     word = get_word()
     player_id()
     run_game(word)
-    while input("Play Again? (Y/N) ").upper() == "Y":
-        clear_screen()
+    while True:
+        restart_game = False
+        while not restart_game:
+            restart = input("Play Again? (Y/N) ")
+            if restart.upper() == "Y":
+                clear_screen()
+                restart_game = True
+            elif restart.upper() == "N":
+                print("Thanks for playing! " + PLAYER_NAME)
+                quit()
+            else:
+                clear_screen()
+                print(f"{restart} not valid")
+                print("Type 'Y' or 'N'")
         word = get_word()
         run_game(word)
 
