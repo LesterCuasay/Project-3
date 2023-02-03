@@ -14,7 +14,10 @@ def player_id():
     while True:
         global PLAYER_NAME
         PLAYER_NAME = input("What's your name?  \n").upper()
-        if PLAYER_NAME.isalpha():
+        if len(PLAYER_NAME) < 3:
+            clear_screen()
+            print("Name has to be more than 3 letters")
+        elif PLAYER_NAME.isalpha():
             clear_screen()
             print(f"{PLAYER_NAME} Let's play Hangman!")
             return
