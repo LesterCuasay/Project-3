@@ -10,4 +10,22 @@ The game consists of 6 tries, every letter or word guesses will lower the tries 
 
 The deployed project can be found here - [Hangman](https://project-3-hangman-ci.herokuapp.com/)
 
+## __UX & Design__
+
+### __User Stories__
+- As a user, I want to be able to know the rules of the game before starting so that I know what to do.
+- As a user, I want to be able to input my name and be given feedback for invalid data.
+- As a user, I want to know how many letters the word contains to be able to have better choices for my guesses.
+- As a user, I want to see what letters I have already used to guess so that I do not input the same letter again; if i do then i want to be prompt for invalid data.
+- As a user, I want to know how many tries I have left and a clear visual of the hangman so that i know how many guesses i have left.
+- As a user, I want to be able to restart the game with ease so that I do not have to refresh/run the game again.
+
+### __Flowchart__
+
+I made a flowchart for the project so that i can follow clearly what i wanted implemented during the creation proccess. It also shows the path the computer will go through when asking the user for input and when they give invalid data.
+
+![]()
+
+## __Features__
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
