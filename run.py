@@ -143,6 +143,7 @@ def main():
                 print("Let's go again, " + PLAYER_NAME + "!")
                 restart_game = True
             elif restart.upper() == "N":
+                clear_screen()
                 print("Thanks for playing, " + PLAYER_NAME + "!")
                 quit()
             else:

@@ -28,4 +28,65 @@ I made a flowchart for the project so that i can follow clearly what i wanted im
 
 ## __Features__
 
+__Landing Page__
+- This will be the first thing the user will see giving them a clear indication on how the game works. When the "Enter" key is pressed it will start the game.
+
+![landing](docs/images/landing.png)
+
+__Player Name__
+- After pressing "Enter" on the landing page, you will be taken here to start the game. You can choose a name which will be used to give you feedback throughout the game.
+
+![name](docs/images/name.png)
+
+- However, i put a feature that the name has to be more than 3 letters for the name to be valid. If you put a name under the required letters you will get this prompt, and will be asked to input your name again this will loop until your chosen name passes the criteria.
+
+![name-error](docs/images/name-error.png)
+
+__Hangman Game__
+- After choosing a name, the game will start this is the layout of the game. It also uses your chosen name to welcome you into the game shown at the top of the terminal.
+
+![game](docs/images/game.png)
+
+__Word Length__
+- This feature shows you how long the word is, this will change every game as the word is randomly generated. Also the "_" will change depending on the length of the word.
+
+![length](docs/images/length.png)
+
+__Letters Guessed__
+- This feature shows you what letter you have already guessed that is NOT in the word.
+
+![guess](docs/images/guess.png)
+
+- If you guess the same letter, it will not consume a try but it will give you a prompt saying you've used that letter already.
+
+![guess-repeat](docs/images/guess-repeat.png)
+
+__Word Guess__
+- You can also guess the word fully if you guess wrong you will lose a try, although the word guess has to be the length of the word or you will get this prompt:
+
+![word-guess](docs/images/word-guess.png)
+
+
+__Tries__
+- When you input incorrect guesses, your tries will decrement by 1 and this feature will show you how many tries you have left it also shows the graphic image of the hangman.
+
+![tries](docs/images/tries.png) ![tries1](docs/images/tries1.png)
+
+__No more tries__
+- If you are not succesful with guessing the word, you will lose the game and will be given the chance to restart the game.
+
+![no-tries](docs/images/no-tries.png)
+
+- Only "Y" or "N" is a valid input, if you enter a letter other than that you will get this input:
+
+![restart-error](docs/images/restart-error.png)
+
+- If you input "N" the game will end, and you will get this prompt:
+
+![restart-n](docs/images/restart-n.png)
+
+- If you input "Y" the game will restart from the beginning with a new random word. You can notice the difference as at the top of the terminal it will say "Lets go again, {player name}"
+
+![restat-y](docs/images/restart-y.png)
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
