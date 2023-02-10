@@ -7,6 +7,23 @@ from words import word_list
 from graphics import display_hangman
 
 
+def menu():
+    """
+    Shows user what they need to know about the game
+    """
+    print(
+        """
+    Welcome to my hangman game!
+    You have 6 tries to guess the random word generated.
+    1 try counts for letters or word guesses.
+    You lose tries per incorrect gusses.
+    Guess the word in 6 tries and win the game!
+    """
+    )
+    input("Press Enter to start the game!")
+    clear_screen()
+
+
 def player_id():
     """
     Prompts the user to input a player name
@@ -113,6 +130,7 @@ def main():
     Gives user the option to restart the game once game completion.
     If not, then they can terminate the game.
     """
+    menu()
     word = get_word()
     player_id()
     run_game(word)
