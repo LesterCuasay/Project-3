@@ -13,7 +13,7 @@ def menu():
     """
     print(
         """
-    Welcome to my hangman game!
+    Welcome to my Hangman game!
     You have 6 tries to guess the random word generated.
     1 try counts for letters or word guesses.
     You lose tries per incorrect guesses.

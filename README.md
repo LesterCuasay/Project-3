@@ -1,31 +1,13 @@
+# __Hangman - Portfolio Project 3__
+
+![amiresponsive](docs/images/amiresponsive.png)
+
+Welcome to my 3rd Project for Code Institute, this project consist of solely Python to which i created a Hangman game! The project is deployed through [Heroku](https://heroku.com/).
+
+From the start, it will give an brief introduction letting the user know what the game is about, showing them brief rules of the game. To then the player is prompt to press "Enter" to start the game; this will then prompt the user for their name to start the game.
+
+The game consists of 6 tries, every letter or word guesses will lower the tries you have for the game. After 6 tries being used and you do not guess the word you will lose the game, though if you were succesful during the 6 tries and managed to guess the word then you win the game!
+
+The deployed project can be found here - [Hangman](https://project-3-hangman-ci.herokuapp.com/)
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome LesterCuasay,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
