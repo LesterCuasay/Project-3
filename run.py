@@ -52,9 +52,12 @@ def run_game(word):
     guessed_words = []
     tries = 6
     print(display_hangman(tries))
-    print(word_completion)
     print("\n")
     while not guessed and tries > 0:
+        for blank in word_completion:
+            print(blank, end=" ")
+        print("")
+        print("\n")
         print(f"The word has {len(word)} letters.")
         print("Letters guessed: " + ', ' .join(guessed_letters))
         guess = input("Please guess a letter or a word: ").upper()
@@ -95,7 +98,6 @@ def run_game(word):
             clear_screen()
             print("Not a valid guess")
         print(display_hangman(tries))
-        print(word_completion)
         print("\n")
     if guessed:
         clear_screen()
