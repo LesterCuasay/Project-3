@@ -16,7 +16,7 @@ def menu():
     Welcome to my hangman game!
     You have 6 tries to guess the random word generated.
     1 try counts for letters or word guesses.
-    You lose tries per incorrect gusses.
+    You lose tries per incorrect guesses.
     Guess the word in 6 tries and win the game!
     """
     )
