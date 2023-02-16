@@ -25,6 +25,7 @@ The deployed project can be found here - [Hangman](https://project-3-hangman-ci.
     - [No more tries](#no-more-tries)
 - [Testing](#testing)
 - [Bugs](#bugs)
+- [Features to Implement](#features-to-implement)
 - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
 - [Credits](#credits)
@@ -122,6 +123,10 @@ I put my code from run.py and graphics.py in [CI Python Linter](https://pep8ci.h
 
 ## __Bugs__
 There are no known bugs at the moment.
+
+## __Features to Implement__
+- Add colour to the game to make it more appealing
+- Add a leaderboard system so that the user can see their scores compared to others
 
 ## __Deployment__
 
