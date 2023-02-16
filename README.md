@@ -10,6 +10,26 @@ The game consists of 6 tries, every letter or word guesses will lower the tries 
 
 The deployed project can be found here - [Hangman](https://project-3-hangman-ci.herokuapp.com/)
 
+## __Table of Contents__
+- [UX & Design](#ux--design)
+    - [User Stories](#user-stories)
+- [Flowchart](#flowchart)
+- [Features](#features)
+    - [Landing Page](#landing-page)
+    - [Player Name](#player-name)
+    - [Hangman Game](#hangman-game)
+    - [Word Length](#word-length)
+    - [Letters Guessed](#letters-guessed)
+    - [Word Guess](#word-guess)
+    - [Tries](#tries)
+    - [No more tries](#no-more-tries)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+    - [Heroku Deployment](#heroku-deployment)
+- [Credits](#credits)
+
+
 ## __UX & Design__
 
 ### __User Stories__
@@ -30,12 +50,12 @@ This was done on [LucidChart](https://www.lucidchart.com/)
 
 ## __Features__
 
-__Landing Page__
+### __Landing Page__
 - This will be the first thing the user will see giving them a clear indication on how the game works. When the "Enter" key is pressed it will start the game.
 
 ![landing](docs/images/landing.png)
 
-__Player Name__
+### __Player Name__
 - After pressing "Enter" on the landing page, you will be taken here to start the game. You can choose a name which will be used to give you feedback throughout the game.
 
 ![name](docs/images/name.png)
@@ -44,17 +64,17 @@ __Player Name__
 
 ![name-error](docs/images/name-error.png)
 
-__Hangman Game__
+### __Hangman Game__
 - After choosing a name, the game will start this is the layout of the game. It also uses your chosen name to welcome you into the game shown at the top of the terminal.
 
 ![game](docs/images/game.png)
 
-__Word Length__
+### __Word Length__
 - This feature shows you how long the word is, this will change every game as the word is randomly generated. Also the "_" will change depending on the length of the word.
 
 ![length](docs/images/length.png)
 
-__Letters Guessed__
+### __Letters Guessed__
 - This feature shows you what letter you have already guessed that is NOT in the word.
 
 ![guess](docs/images/guess.png)
@@ -63,18 +83,18 @@ __Letters Guessed__
 
 ![guess-repeat](docs/images/guess-repeat.png)
 
-__Word Guess__
+### __Word Guess__
 - You can also guess the word fully if you guess wrong you will lose a try, although the word guess has to be the length of the word or you will get this prompt:
 
 ![word-guess](docs/images/word-guess.png)
 
 
-__Tries__
+### __Tries__
 - When you input incorrect guesses, your tries will decrement by 1 and this feature will show you how many tries you have left it also shows the graphic image of the hangman.
 
 ![tries](docs/images/tries.png) ![tries1](docs/images/tries1.png)
 
-__No more tries__
+### __No more tries__
 - If you are not succesful with guessing the word, you will lose the game and will be given the chance to restart the game.
 
 ![no-tries](docs/images/no-tries.png)
@@ -94,10 +114,10 @@ __No more tries__
 ## __Testing__
 I put my code from run.py and graphics.py in [CI Python Linter](https://pep8ci.herokuapp.com/) to make sure that my code had no errors the results are shown below:
 
-__Run.py__
+### __Run.py__
 ![run](docs/images/run.png)
 
-__Graphics.py__
+### __Graphics.py__
 ![graphics](docs/images/graphics.png)
 
 ## __Bugs__
