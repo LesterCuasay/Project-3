@@ -118,7 +118,10 @@ To be able to deploy using Heroku follow these steps:
 - Find the repository name of your project on Github
 - Once connected, You can choose from _Automatic Deployment or Manual Deployment_
 
-
+## __Credits__
+- [LucidChart](https://www.lucidchart.com/) - For making the flow chart
+- [Heroku](https://heroku.com/) - For deployment of the app
+- [CI Python Linter](https://pep8ci.herokuapp.com/) - For validating my code
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
