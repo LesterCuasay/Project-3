@@ -24,7 +24,9 @@ The deployed project can be found here - [Hangman](https://project-3-hangman-ci.
 
 I made a flowchart for the project so that i can follow clearly what i wanted implemented during the creation proccess. It also shows the path the computer will go through when asking the user for input and when they give invalid data.
 
-![]()
+This was done on [LucidChart](https://www.lucidchart.com/)
+
+![flowchart](docs/flowchart/flowchart.png)
 
 ## __Features__
 
@@ -89,4 +91,34 @@ __No more tries__
 
 ![restat-y](docs/images/restart-y.png)
 
+## __Testing__
+I put my code from run.py and graphics.py in [CI Python Linter](https://pep8ci.herokuapp.com/) to make sure that my code had no errors the results are shown below:
+
+__Run.py__
+![run](docs/images/run.png)
+
+__Graphics.py__
+![graphics](docs/images/graphics.png)
+
+## __Bugs__
+There are no known bugs at the moment.
+
+## __Deployment__
+
+### __Heroku Deployment__
+This project was deployed using [Heroku](https://heroku.com/).
+
+To be able to deploy using Heroku follow these steps:
+- On the right click on _New_
+- From the drop down click on _Create New App_
+- Input the name for your app (app name has to be unique so use wisely!)
+- Choose a region and then click on _Create App_
+- From the tabs on _Deploy_ scroll down to find _Deployment method_
+- Click on _GitHub_ and connect
+- Find the repository name of your project on Github
+- Once connected, You can choose from _Automatic Deployment or Manual Deployment_
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+

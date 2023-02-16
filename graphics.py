@@ -71,6 +71,6 @@ def display_hangman(tries):
                    |
                    |
                    -
-                """     
+                """
     ]
     return stages[tries]
