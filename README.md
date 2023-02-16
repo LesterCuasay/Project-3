@@ -113,10 +113,21 @@ To be able to deploy using Heroku follow these steps:
 - From the drop down click on _Create New App_
 - Input the name for your app (app name has to be unique so use wisely!)
 - Choose a region and then click on _Create App_
+- From the tabs on _Settings_ screoll down to find _Buildpacks_
+- Click on _Add buildpack_
+- Choose to add _python_ and _node.js_
+- _Python_ has to be at the top of this list and _Node.js_ second, if not then just drag either of them to the correct order.
 - From the tabs on _Deploy_ scroll down to find _Deployment method_
 - Click on _GitHub_ and connect
 - Find the repository name of your project on Github
 - Once connected, You can choose from _Automatic Deployment or Manual Deployment_
+
+Note that if your code had private information that you did not want to push to github, you must add this information for your app to be succesfully deployed
+
+- From _settings_ find _config vars_ 
+- Click on _reveal config vars_
+- Then add the _KEY_ and _VALUE_
+
 
 ## __Credits__
 - [LucidChart](https://www.lucidchart.com/) - For making the flow chart
